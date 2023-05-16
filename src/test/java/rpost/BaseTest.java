@@ -28,4 +28,11 @@ class BaseTest {
         }
     }
 
+    protected void sleep() {
+        try {
+            Thread.sleep(2);
+        } catch (InterruptedException e) {
+        }
+    }
+
 }
