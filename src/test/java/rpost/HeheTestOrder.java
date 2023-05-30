@@ -3,7 +3,6 @@ package rpost;
 import org.junit.jupiter.api.ClassDescriptor;
 import org.junit.jupiter.api.ClassOrderer;
 import org.junit.jupiter.api.ClassOrdererContext;
-import org.springframework.test.context.BootstrapUtils;
 import org.springframework.test.context.TestContextManager;
 import org.springframework.test.context.support.DefaultTestContext;
 
@@ -17,9 +16,7 @@ public class HeheTestOrder implements ClassOrderer {
         for (Class<?> clazz : classes) {
             TestContextManager testContextManager = new TestContextManager(clazz);
             DefaultTestContext testContext = (DefaultTestContext) testContextManager.getTestContext();
-            testContext.
 
-            BootstrapUtils.createBootstrapContext(testClass)
         }
     }
 }
