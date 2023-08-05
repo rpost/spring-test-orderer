@@ -1,1 +1,3 @@
-rootProject.name = 'spring-test-accelerator'
+rootProject.name = 'spring-test-single-context'
+
+include 'test-app'
